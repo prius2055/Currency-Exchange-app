@@ -1,5 +1,4 @@
 const Currency = () => {
-  console.log('currency');
   return <div>Curreny</div>;
 };
 
