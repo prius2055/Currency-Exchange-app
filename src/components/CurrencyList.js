@@ -4,18 +4,38 @@ import Currency from './Currency';
 import { getCurrencies } from '../store/currencySlice';
 
 const CurrencyList = () => {
-  const currencies = useSelector((state) => state.currency);
+  const { items, loadingCurrencies, loadingError } = useSelector(
+    (state) => state.currency
+  );
 
-  console.log(currencies.item);
+  console.log(items);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getCurrencies());
   }, []);
 
+  // useEffect(() => {
+  //   getCurrencies();
+  // }, []);
+
+  if (loadingCurrencies) {
+    <div>Loading</div>;
+  }
+
+  if (loadingError) {
+    <div>Error</div>;
+  }
+
+  // if (items.length !== 0) {
+  //   console.log(items);
+  // }
+
   return (
     <div>
-      <Currency />
+      {items.map((item) => (
+        <Currency key={item.id} currencyInfo={item} />
+      ))}
     </div>
   );
 };
