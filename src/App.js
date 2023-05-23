@@ -3,9 +3,10 @@ import { Routes, Route } from 'react-router-dom';
 
 import CurrencyList from './components/CurrencyList';
 import CurrencyDetail from './components/CurrencyDetail';
+import './App.css';
 
 const App = () => (
-  <div>
+  <div className="App">
     <Routes>
       <Route path="/" element={<CurrencyList />} />
       <Route path="/currency-detail" element={<CurrencyDetail />} />

@@ -27,7 +27,7 @@
 
 This site is built as part of an exercise at Microverse. The site is about a SpaceX, This project is created with react js👌 and Redux as a state managment library.
 
-**The spacex React project** i
+**The Currency Metric App React project** i
 
 ## 🛠 Built With <a name="built-with"></a>
 

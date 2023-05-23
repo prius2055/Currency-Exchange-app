@@ -3,39 +3,50 @@ import { useEffect } from 'react';
 import Currency from './Currency';
 import { getCurrencies } from '../store/currencySlice';
 
+import './CurrencyList.css';
+
 const CurrencyList = () => {
   const { items, loadingCurrencies, loadingError } = useSelector(
     (state) => state.currency
   );
-
-  console.log(items);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getCurrencies());
   }, []);
 
-  // useEffect(() => {
-  //   getCurrencies();
-  // }, []);
-
   if (loadingCurrencies) {
-    <div>Loading</div>;
+    <div>
+      <p>Loading</p>
+    </div>;
   }
 
   if (loadingError) {
-    <div>Error</div>;
+    <div>
+      <p>
+        The page failed to load. Please check your network connection and try
+        again
+      </p>
+    </div>;
   }
 
-  // if (items.length !== 0) {
-  //   console.log(items);
-  // }
-
   return (
-    <div>
-      {items.map((item) => (
-        <Currency key={item.id} currencyInfo={item} />
-      ))}
+    <div className="list-container">
+      <div className="container-info">
+        <div className="container-hero">
+          <h2>World Currencies</h2>
+        </div>
+
+        <p>All currencies</p>
+      </div>
+
+      <div className="currency-list">
+        {items.map((item) => (
+          <ul className="item" key={item.id}>
+            <Currency currencyInfo={item} />
+          </ul>
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,0 +1,48 @@
+.list-container {
+  color: white;
+}
+
+.container-info {
+  text-transform: uppercase;
+  background-color: rgb(253, 89, 149);
+}
+
+.container-hero {
+  background: radial-gradient(
+      at center,
+      rgba(0, 0, 0, 0.5),
+      rgba(253, 89, 149, 1)
+    ),
+    url('/public/money.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 5rem;
+}
+
+.container-info p {
+  background-color: rgb(220, 112, 152);
+  padding: 1rem;
+  margin: 0;
+}
+
+.currency-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 190rem;
+}
+
+.item {
+  width: 50%;
+  margin: 0;
+}
+
+.item:nth-child(2n) {
+  background-color: #cf648b;
+}
+
+.hero-img {
+  width: 15rem;
+}
+
