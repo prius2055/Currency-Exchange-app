@@ -1,5 +1,6 @@
 .list-container {
   color: white;
+  font-family: 'Gill Sans', sans-serif;
 }
 
 .container-info {
@@ -8,8 +9,7 @@
 }
 
 .container-hero {
-  background:
-    radial-gradient(
+  background: radial-gradient(
       at center,
       rgba(0, 0, 0, 0.5),
       rgba(253, 89, 149, 1)

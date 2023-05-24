@@ -4,6 +4,7 @@
   flex-direction: column;
   height: 10rem;
   cursor: pointer;
+  font-family: 'Gill Sans', sans-serif;
 }
 
 .currency-detail {
