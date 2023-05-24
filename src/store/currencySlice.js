@@ -10,14 +10,15 @@ export const getSingleCurrency = createAsyncThunk(
   'get/singleCurrency',
   async (baseCurrency) => {
     const currencies = await axios.get(
-      `https://api.vatcomply.com/rates?base=${baseCurrency}`
+      `https://api.vatcomply.com/rates?base=${baseCurrency}`,
     );
     return currencies.data;
-  }
+  },
 );
 
 const initialState = {
   items: [],
+  info: {},
   loadingCurrencies: false,
   loadingError: undefined,
 };
@@ -57,7 +58,16 @@ const currencySlice = createSlice({
       state.loadingError = false;
     });
     builder.addCase(getSingleCurrency.fulfilled, (state, { payload }) => {
-      state.items = payload;
+      const infoObj = { date: payload.date, base: payload.base };
+      const flatArrayOfCurrencies = Object.entries(payload.rates).flatMap(
+        ([key, value]) => ({
+          name: key,
+          rate: value,
+        }),
+      );
+
+      state.items = flatArrayOfCurrencies;
+      state.info = infoObj;
       state.loadingCurrencies = false;
       state.loadingError = false;
     });

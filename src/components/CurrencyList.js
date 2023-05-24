@@ -7,13 +7,13 @@ import './CurrencyList.css';
 
 const CurrencyList = () => {
   const { items, loadingCurrencies, loadingError } = useSelector(
-    (state) => state.currency
+    (state) => state.currency,
   );
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getCurrencies());
-  }, []);
+  }, [dispatch]);
 
   if (loadingCurrencies) {
     <div>
@@ -36,7 +36,6 @@ const CurrencyList = () => {
         <div className="container-hero">
           <h2>World Currencies</h2>
         </div>
-
         <p>All currencies</p>
       </div>
 

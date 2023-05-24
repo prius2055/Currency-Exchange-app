@@ -1,8 +1,15 @@
 import { useSelector } from 'react-redux';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleArrowLeft } from '@fortawesome/free-solid-svg-icons';
+
+import './CurrencyDetail.css';
+import { NavLink } from 'react-router-dom';
 
 const CurrencyDetail = () => {
-  const { items, loadingCurrencies, loadingError } = useSelector(
-    (state) => state.currency
+  const {
+    items, info, loadingCurrencies, loadingError,
+  } = useSelector(
+    (state) => state.currency,
   );
 
   if (loadingCurrencies) {
@@ -20,22 +27,28 @@ const CurrencyDetail = () => {
     </div>;
   }
 
-  const flatArrayOfCurrencies = Object.entries(items.rates).flatMap(
-    ([key, value]) => ({
-      name: key,
-      rate: value,
-    })
-  );
-
   return (
-    <div className="currency-detail">
-      <h2>{items.date}</h2>
-      <h2>Base currency: {items.base}</h2>
-      {flatArrayOfCurrencies.map((item) => (
-        <ul>
-          <li>{item.name}</li>
-          <li>{item.rate}</li>
-        </ul>
+    <div className="detail">
+      <div className="detail-info">
+        <NavLink to="/">
+          <FontAwesomeIcon icon={faCircleArrowLeft} className="icon" />
+        </NavLink>
+        <p>{info.date}</p>
+      </div>
+
+      <div className="detail-hero">
+        <h3>Base currency</h3>
+        <h4>
+          {' '}
+          {info.base}
+        </h4>
+        <p>The base currency compared to other currencies</p>
+      </div>
+      {items.map((item) => (
+        <div className="detail-item" key={item.id}>
+          <p>{item.name}</p>
+          <p>{item.rate}</p>
+        </div>
       ))}
     </div>
   );

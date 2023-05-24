@@ -23,34 +23,34 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 spacex <a name="about-project"></a>
+# 📖 Currency Metric <a name="about-project"></a>
 
 This site is built as part of an exercise at Microverse. The site is about a SpaceX, This project is created with react js👌 and Redux as a state managment library.
 
 **The Currency Metric App React project** i
 
-## 🛠 Built With <a name="built-with"></a>
+## 🛠 Built With <a name="built-with">React</a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Client</summary>
+  <summary>HTML & CSS</summary>
   <ul>
-    <li><a href="#">HTML</a></li>
+    <li><a href="#">HTML & CSS</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Server</summary>
+  <summary>React</summary>
   <ul>
-    <li><a href="#">Live server</a></li>
+    <li><a href="#">React</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Webpack</summary>
+  <summary>Redux</summary>
   <ul>
-    <li><a href="#">webpack</a></li>
+    <li><a href="#">Redux</a></li>
   </ul>
 </details>
 
@@ -58,8 +58,8 @@ This site is built as part of an exercise at Microverse. The site is about a Spa
 
 ### Key Features <a name="key-features"></a>
 
-- **Visit spaceX rockets**
-- **Explore the Missions**
+- **Display world currencies**
+- **Display the exchange rate of currencies**
 
 <!-- LIVE DEMO -->
 
@@ -119,12 +119,6 @@ to check linter errors.
 
 \*\*Authors:
 
-👤 **Abel Tsegaye**
-
-- GitHub: [@githubhandle](https://github.com/abeltsew)
-- Twitter: [@twitterhandle](https://twitter.com/abeltsew)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/abeltsew)
-
 👤 **Prince**
 
 - GitHub: [@prius2055](https://github.com/prius2055)
@@ -138,7 +132,7 @@ to check linter errors.
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Live Chat**
-- [ ] **Twitter Feed**
+- [ ] **More currencies**
 - [ ] **Youtube Integration**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -165,7 +159,13 @@ If you like this project you can buy me coffee. Contact detail is above.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thank you Microverse
+I would like to thank the Microverse team for their support.
+
+I would also like to appreciate the creative commons team for the graphical design and inspiration
+
+> Click on this link to checkout them out.
+
+[Creative commons] (https://creativecommons.org/licenses/by-nc/4.0/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
