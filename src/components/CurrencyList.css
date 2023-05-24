@@ -9,7 +9,8 @@
 }
 
 .container-hero {
-  background: radial-gradient(
+  background:
+    radial-gradient(
       at center,
       rgba(0, 0, 0, 0.5),
       rgba(253, 89, 149, 1)
