@@ -1,0 +1,32 @@
+.currency {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  cursor: pointer;
+}
+
+.currency-detail {
+  margin-top: 5rem;
+  align-self: flex-end;
+  padding-bottom: 1rem;
+}
+
+.currency-symbol {
+  margin-bottom: 1rem;
+}
+
+.currency-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.icon {
+  color: #fff;
+}
