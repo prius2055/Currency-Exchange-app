@@ -59,6 +59,7 @@ This site is built as part of an exercise at Microverse. The site is about a Spa
 ### Key Features <a name="key-features"></a>
 
 - **Display world currencies**
+- **Filter by currency**
 - **Display the exchange rate of currencies**
 
 <!-- LIVE DEMO -->
