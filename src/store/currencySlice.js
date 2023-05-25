@@ -26,13 +26,13 @@ const initialState = {
 const currencySlice = createSlice({
   name: 'curreny',
   initialState,
-  // reducers: {
-  //   getCurrencyDetail: (state, { payload }) => {
-  //     const filteredArray = state.items.filter((item) => item.id === payload);
-  //     state.items = filteredArray;
-  //   },
-  // },
+  reducers: {
+    filterCurrency: (state, { payload }) => {
+      const filteredArray = state.items.filter((item) => item.name === payload);
 
+      state.items = filteredArray;
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(getCurrencies.pending, (state) => {
       state.loadingCurrencies = true;
@@ -80,4 +80,4 @@ const currencySlice = createSlice({
 
 export default currencySlice.reducer;
 
-// export const { getCurrencyDetail } = currencySlice.actions;
+export const { filterCurrency } = currencySlice.actions;

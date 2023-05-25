@@ -39,7 +39,6 @@ const CurrencyDetail = () => {
       <div className="detail-hero">
         <h3>Base currency</h3>
         <h4>
-          {' '}
           {info.base}
         </h4>
         <p>The base currency compared to other currencies</p>
