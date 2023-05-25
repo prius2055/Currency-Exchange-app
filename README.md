@@ -65,7 +65,7 @@ This site is built as part of an exercise at Microverse. The site is about a Spa
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://spacex-mv.netlify.app/)
+- [Live Demo](https://currency-exchange-app.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
