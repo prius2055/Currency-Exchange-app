@@ -10,10 +10,10 @@ export const getSingleCurrency = createAsyncThunk(
   'get/singleCurrency',
   async (baseCurrency) => {
     const currencies = await axios.get(
-      `https://api.vatcomply.com/rates?base=${baseCurrency}`
+      `https://api.vatcomply.com/rates?base=${baseCurrency}`,
     );
     return currencies.data;
-  }
+  },
 );
 
 const initialState = {
@@ -63,7 +63,7 @@ const currencySlice = createSlice({
         ([key, value]) => ({
           name: key,
           rate: value,
-        })
+        }),
       );
 
       state.items = flatArrayOfCurrencies;
