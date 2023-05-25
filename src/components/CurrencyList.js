@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import Currency from './Currency';
+import Filter from './Filter';
 import { getCurrencies } from '../store/currencySlice';
 
 import './CurrencyList.css';
@@ -9,6 +10,7 @@ const CurrencyList = () => {
   const { items, loadingCurrencies, loadingError } = useSelector(
     (state) => state.currency,
   );
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -33,6 +35,8 @@ const CurrencyList = () => {
   return (
     <div className="list-container">
       <div className="container-info">
+        <Filter />
+
         <div className="container-hero">
           <h2>World Currencies</h2>
         </div>

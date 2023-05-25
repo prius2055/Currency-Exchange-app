@@ -16,6 +16,11 @@ export const getSingleCurrency = createAsyncThunk(
   },
 );
 
+// export const filterCurrency = createAsyncThunk('filter/currency', async () => {
+//   const currencies = await axios.get('https://api.vatcomply.com/currencies');
+//   return currencies.data;
+// });
+
 const initialState = {
   items: [],
   info: {},
@@ -26,7 +31,15 @@ const initialState = {
 const currencySlice = createSlice({
   name: 'curreny',
   initialState,
+  reducers: {
+    filterCurrency: (state, { payload }) => {
+      const filteredArray = state.items.filter((item) => item.name === payload);
+      // console.log(filteredArray);
 
+      // console.log(payload);
+      state.items = filteredArray;
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(getCurrencies.pending, (state) => {
       state.loadingCurrencies = true;
@@ -69,9 +82,28 @@ const currencySlice = createSlice({
       state.loadingError = true;
       state.loadingCurrencies = false;
     });
+
+    // builder.addCase(filterCurrency.pending, (state) => {
+    //   state.loadingCurrencies = true;
+    // });
+    // builder.addCase(filterCurrency.fulfilled, (state, { payload }) => {
+    //   state.loadingCurrencies = false;
+    //   const arrayOfCurrencies = Object.entries(payload);
+    //   const flatArray = arrayOfCurrencies.flatMap(([key, value]) => ({
+    //     ...value,
+    //     currency: key,
+    //     id: nanoid(),
+    //   }));
+    //   const filteredArray = flatArray.filter((item) => item.name === payload);
+    //   state.items = filteredArray;
+    // });
+    // builder.addCase(filterCurrency.rejected, (state) => {
+    //   state.loadingCurrencies = false;
+    //   state.loadingError = true;
+    // });
   },
 });
 
 export default currencySlice.reducer;
 
-// export const { getCurrencyDetail } = currencySlice.actions;
+export const { filterCurrency } = currencySlice.actions;

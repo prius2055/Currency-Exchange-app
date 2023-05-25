@@ -35,8 +35,8 @@ describe('Currency component', () => {
 
   test('should render currency details on to the screen', () => {
     const newState = {
-      rocket: {
-        rockets: [
+      currencies: {
+        items: [
           {
             id: 1,
             name: 'US Dollar',
