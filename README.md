@@ -162,7 +162,7 @@ If you like this project you can buy me coffee. Contact detail is above.
 
 I would like to thank the Microverse team for their support.
 
-I would also like to appreciate the creative commons team for the graphical design and inspiration
+I would also like to appreciate the creative commons team for the graphical design and particularly Nelson Sakwa the author of the design.
 
 > Click on this link to checkout them out.
 
