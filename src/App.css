@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Gill Sans';
+  src: url('../fonts/GillSans/Gill\ Sans.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+body {
+  font-family: 'Gill Sans', 'lato', sans-serif;
+  background-color: #dc7098;
+}

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7c2286b4.css",
+    "main.js": "/static/js/main.c7a24a48.js",
+    "static/media/money.jpg": "/static/media/money.bc0e542662f14c6588a4.jpg",
+    "static/media/Gill Sans.otf": "/static/media/Gill Sans.0c3ea264fff3ef2bfce7.otf",
+    "index.html": "/index.html",
+    "main.7c2286b4.css.map": "/static/css/main.7c2286b4.css.map",
+    "main.c7a24a48.js.map": "/static/js/main.c7a24a48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c2286b4.css",
+    "static/js/main.c7a24a48.js"
+  ]
+}
