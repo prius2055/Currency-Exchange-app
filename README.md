@@ -164,10 +164,6 @@ I would like to thank the Microverse team for their support.
 
 I would also like to appreciate [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) the author of the [original design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))  as required by the [creative commons license](https://creativecommons.org/licenses/).
 
-> Click on this link to checkout them out.
-
-[Creative commons] (https://creativecommons.org/licenses/by-nc/4.0/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
