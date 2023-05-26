@@ -162,7 +162,7 @@ If you like this project you can buy me coffee. Contact detail is above.
 
 I would like to thank the Microverse team for their support.
 
-I would also like to appreciate the creative commons team for the graphical design and particularly Nelson Sakwa the author of the design.
+I would also like to appreciate [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) the author of the [original design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))  as required by the [creative commons license](https://creativecommons.org/licenses/).
 
 > Click on this link to checkout them out.
 
